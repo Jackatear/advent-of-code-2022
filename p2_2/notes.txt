@@ -1,0 +1,65 @@
+X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
+
+example
+B Z
+--> B still means paper
+--> Z indicates that we need to WIN ths round
+
+C X
+--> C indicates scissors 
+--> X indicates we lose 
+
+Points are still calculaed the same
+ie rock = 1, paper = 2, scissors = 3
+
+win = 6, draw = 3, lose = 0 
+
+So now we know the score points are determined by our letter
+ie X = 0, Y = 3, Z = 6
+
+We need to work back to see which hand we need to play 
+and hterefore what points we will get 
+
+
+
+A-rock | WIN=paper=2 | LOSE=scissors=3
+B-paper | WIN=scissors=3 | LOSE=rock=1
+C-scissors | WIN=rock=1 | LOSE=paper=2
+
+example
+B X -> Lose, rock, 0,1 ==> 1
+C Y -> draw, scissors, 3,3 ==> 6
+A Y -> draw, rock, 3,1 ==> 4
+B Z -> win, scissors, 6,3 ==> 9
+A Z -> win, paper, 6,2 ==> 8
+
+
+total = 28 
+
+example 2
+A X 0,3
+B Y 3,2
+C X 0,2
+C Z 6,1
+A Y 3,1
+C X 0,2
+B X 0,1
+B Z 6,3
+A Z 6,2
+total= 41
+
+
+
+
+
+A --> {win: B} ==>  {"A": {X:C, Y:A, Z:B}}
+      {lose: C}
+      {draw: A}
+
+B --> {win: C} ==> {"B": {X:A, Y:B, Z:C}}
+      {lose : A}
+      {draw: B}
+
+C --> {win: A} ==> {"C": {X:B, Y:C, Z:A}}
+      {lose: B}
+      {draw: C}
