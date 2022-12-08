@@ -1,0 +1,22 @@
+each line in the input file represents a compartment of a rucksack
+
+each line is even in length, and can be divided be two into each compartment 
+
+iterate through each compartment, and create a list of all of the elements
+
+compartment_one = [a,b,v,e,D,v,R,t]
+compartment_two = [t,r,w,i,P,v,c,c]
+
+then we need to compare the two lists, and select the value that is shared by both compartments.
+
+we can assume that only one item will be shared.
+
+we can then find this values index in our priority_list 
+
+the index+1 will be the priority of the item.
+
+priority_sum = 0
+
+for each item we can add the value to the priority_sum variable.
+
+return this variable
