@@ -1,0 +1,8 @@
+total_space = 70000000
+total_space_needed = 30000000
+
+total_space_used = 41518953
+
+current_space_left = 70000000 - 41518953 -> 28481047
+
+dif = 30000000 - 28481047 -> 1518953
